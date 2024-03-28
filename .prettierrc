@@ -7,5 +7,6 @@
   "printWidth": 100,
   "requirePragma": false,
   "tabWidth": 2,
-  "useTabs": false
+  "useTabs": false,
+  "endOfLine": "auto"
 }
