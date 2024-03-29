@@ -1,0 +1,26 @@
+.MainButton-container {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+  box-shadow: var(--light-shadow);
+  &:hover {
+    box-shadow: var(--dark-shadow);
+  }
+}
+
+.button-img-box {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.button-img-box img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
