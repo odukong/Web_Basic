@@ -1,0 +1,115 @@
+/*toggle button style*/
+.sidebar-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-primary-5);
+
+  transition: var(--transition);
+  cursor: pointer;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.sidebar-toggle:hover {
+  color: var(--clr-primary-7);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*toggle sidebar style*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  box-shadow: var(--clr-black);
+  transition: var(--transition);
+  transform: translate(-100%);
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 40rem;
+  }
+}
+/*=======*/
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.sidebar-logo {
+  justify-self: center;
+  height: 4rem;
+}
+
+.sidebar-close-btn {
+  color: var(--clr-primary-2);
+  font-size: 3rem;
+  background: transparent;
+  border-color: transparent;
+
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.sidebar-close-btn:hover {
+  color: var(--clr-primary-4);
+  transform: rotate(360deg);
+}
+
+.sidebar-links {
+  padding: 0;
+}
+.sidebar-links a {
+  display: block;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  color: var(--clr-primary-3);
+  transition: var(--transition);
+}
+.sidebar-links a:hover {
+  background: var(--clr-black);
+  color: var(--clr-primary-9);
+  padding-left: 1.75rem;
+}
+
+.sidebar-social-icons {
+  justify-self: center;
+  display: flex;
+  padding-bottom: 2rem;
+}
+.sidebar-social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.sidebar-social-icons a:hover {
+  color: var(--clr-primary-1);
+}
