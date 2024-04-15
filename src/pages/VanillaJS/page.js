@@ -6,6 +6,8 @@ import Reviews from "./Reviews/Reviews";
 import Navigation from "./Navigation/Navigation";
 import Sidebar from "./Sidebar/Sidebar";
 import Modal from "./Modal/Modal";
+import QA from "./QA/QA";
+import Menu from "./Menu/Menu";
 
 function VanillaPage() {
   const navigate = useNavigate();
@@ -21,6 +23,8 @@ function VanillaPage() {
       <button onClick={() => navigate("../navigation")}>Navigation</button>
       <button onClick={() => navigate("../sidebar")}>Sidebar</button>
       <button onClick={() => navigate("../modal")}>Modal</button>
+      <button onClick={() => navigate("../qa")}>QA</button>
+      <button onClick={() => navigate("../menu")}>Menu</button>
     </>
   );
 }
@@ -35,6 +39,8 @@ export default function Page() {
       <Route path="navigation/*" element={<Navigation />} />
       <Route path="sidebar/*" element={<Sidebar />} />
       <Route path="modal/*" element={<Modal />} />
+      <Route path="qa/*" element={<QA />} />
+      <Route path="menu/*" element={<Menu />} />
     </Routes>
   );
 }
